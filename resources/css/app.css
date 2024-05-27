@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Satisfy';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url('fonts/satisfy.woff2') format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+}
+
+.why-us,
+.praisal{
+    background-image:url('../js/Assets/images/atlas.png');
+}
+
+.composition{ 
+	position: relative; 
+}
+.composition .composition-photo{
+	width: 55%;
+	box-shadow: 0 15px 40px rgba(0,0,0,.4);
+	border-radius: 2px;
+	position: absolute;
+	z-index: 10;
+	transition: all .2s;
+	outline-offset: 20px; 
+}
+ .composition-photo-0{
+	left: 0;
+	top: -20px;
+}
+.composition-photo-1{
+	right: 0;
+	top: 20px;
+}
+.composition-photo-2{
+	left: 20%;
+	top: 100px;
+}
+.composition .composition-photo:hover{
+	outline: 15px solid#F17600;
+	transform: scale(1.05) translateY(-.5px);
+	box-shadow: 0 25px 40px rgba(0,0,0,.5);
+	z-index: 20;
+}
+.composition:hover .composition-photo:not(:hover){
+	transform: scale(.95);
+}
+
+
+#btn_truck{
+	padding: 5px 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 0.8rem;
+    border-radius: 100%;
+    float: right;
+    margin-right: -30px;
+    margin-top: 3px;
+    z-index: 4;
+    position: relative;
+    background-color: black;
+    color: white;
+}
+
