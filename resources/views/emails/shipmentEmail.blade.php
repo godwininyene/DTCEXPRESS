@@ -21,6 +21,10 @@
             padding: 25px 0;
             background-color: #333333 !important;
         }
+        .header{
+            padding: 25px 0;
+            background-color: #333333 !important;
+        }
         .header, .footer {
             text-align: center;
         }
