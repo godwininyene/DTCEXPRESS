@@ -9,7 +9,10 @@ import {IoMdInformationCircle} from 'react-icons/io'
 const About = () => {
   return (
     <BaseLayout>
-        <Head title="About Us" />
+        <Head title="About Us">
+            <meta name="description"content="CD & T Express logistics company is the world's driving worldwide coordination supplier - we uphold industry and exchange the worldwide trade of merchandise through land, sea, and air transport." />
+            <meta name="keywords" content="CD & T Express logistics company, International logistics services,  logistics solution, courier delivery, sea freight, Air Freight, Land Freight" />
+        </Head>
 
        <div className="about-page-container  h-[318px] bg-center" style={{backgroundImage:`url(${bannerBg})`}}>
             <div className={`bg-gradient-to-b pt-28 h-full from-[#000000ec] dark:from-[#000000da] via-[#000000b9] to-[#000000b9] dark:to-[#000000d5]  text-primary`}>

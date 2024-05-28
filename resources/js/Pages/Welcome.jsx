@@ -14,7 +14,10 @@ import Praisal from '@/Components/Praisal';
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     return (
         <BaseLayout>
-            <Head title="Welcome" />
+             <Head title="CD & T Express">
+                <meta name="description" content="CD & T Express logistics company" />
+                <meta name="keywords" content="CD & T Express logistics company, International logistics services,  logistics solution, courier delivery, sea freight, Air Freight, Land Freight" />
+            </Head>
             <Hero />
             <WhyUs />
             <AboutSection />

@@ -81,7 +81,7 @@ const WhyUs = ()=>{
                             <div className="col-span-5">
                                 <h2 className="mb-3 font-semibold text-black text-lg uppercase">Request Quote</h2>
                                 <p className="text-black">
-                                In Express Logistics Courier Services, we provided a form for our customers to place their quote
+                                In CD & T Express logistics company, we provided a form for our customers to place their quote
                                 request and get a response from us based on their quote request.
                                 </p>
                             </div>
