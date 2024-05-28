@@ -97,7 +97,10 @@ const Track = () => {
     }
   return (
     <BaseLayout>
-        <Head title="Track Parcel" />
+       <Head title="Contact - CD & T Express">
+            <meta name="description"  content="Track with your 15 character tracking number." />
+            <meta name="keywords" content="CD & T Express logistics company, International logistics services,  logistics solution, courier delivery, sea freight, Air Freight, Land Freight" />
+          </Head>
        
 
         <div className="h-[318px] bg-center" style={{backgroundImage:`url(${bannerBg})`}}>

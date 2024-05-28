@@ -50,7 +50,7 @@
             </a>
         </div>
         <div class="content">
-            <p>Dear {{$sender}},</p>
+            <p>Dear {{$receiver}},</p>
             <p>We are writing to inform you that we have received a package addressed to you from {{$sender}}.</p>
             <p><strong>Shipment Details:</strong></p>
             <p><strong>Tracking ID:</strong> {{$tracking_number}}</p>

@@ -14,7 +14,10 @@ const Contact = () => {
     const toggleID = ID=>setID(prevID=> prevID == null ? ID :null)
   return (
         <BaseLayout>
-          <Head title="Contact Us" />
+          <Head title="Contact - CD & T Express">
+            <meta name="description" content="Contact  CD & T Express logistics company to know more on our logistics solutions." />
+            <meta name="keywords" content="CD & T Express logistics company, International logistics services,  logistics solution, courier delivery, sea freight, Air Freight, Land Freight" />
+          </Head>
 
           <div className="about-page-container  h-[318px] bg-center" style={{backgroundImage:`url(${bannerBg})`}}>
               <div className={`bg-gradient-to-b pt-28 h-full from-[#000000ec] dark:from-[#000000da] via-[#000000b9] to-[#000000b9] dark:to-[#000000d5]  text-primary`}>
