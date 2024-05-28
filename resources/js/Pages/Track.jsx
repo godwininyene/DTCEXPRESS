@@ -148,7 +148,7 @@ const Track = () => {
                 </div>
                 <div className='row justify-content-center mt-5'>
                     <div data-aos="fade-up" className='col-md-6 mb-5'>
-                        <h3>Here’s the fastest way to check the status of your shipment. There will be no need to call Customer Service – our online results give you real-time, detailed progress of your shipment is shown through Express Logistics Courier Services.</h3>
+                        <h3>Here’s the fastest way to check the status of your shipment. There will be no need to call Customer Service – our online results give you real-time, detailed progress of your shipment is shown through CD & T Express logistics company Services.</h3>
                     </div>
                     {/* <button onClick={getLocation}>Try It</button> */}
                 </div>

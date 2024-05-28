@@ -473,40 +473,42 @@
                                 <tr>
                                     <td class="content-cell">
                                         <div class="f-fallback">
-                                           
-                                            <p><strong>Subject:</strong> Your Package from <strong> {{ $sender}}</strong> Has Been Received!</p>
+                                       
                                             <h4>Dear {{ $receiver }},</h4>
-                                                <p>
-                                                    We are excited to inform you that we have received a package with your details as the receiver from <strong>{{ $sender}}</strong>.
-                                                </p>
-                                                <p>
-                                                    <strong>Shipment Details:</strong>
+                                            <p>
+                                                We are writing to inform you that we have received a package addressed to you from <strong> {{ $sender }}</strong> .
+                                            </p>
 
-                                                    <ul>
-                                                        <li>
-                                                            <strong>Tracking Number:</strong> {{$tracking_number}}
-                                                        </li>
-                                                        <li>
-                                                            <strong>Sender:</strong> {{$sender}}
-                                                        </li>
-                                                        <li>
-                                                            <strong>Estimated Delivery Date:</strong> {{$delivery_date}}
-                                                        </li>
-                                                    </ul>
-                                                    You can track the status of your shipment using the tracking number provided above by visiting our <a href="https://cdtexpress.com/track">tracking page</a>.
-                                                </p>
+                                            <p>
+                                                <strong>Shipment Details:</strong>
+                                            </p>
+                                            <p>
+                                                <ul>
+                                                    <li>
+                                                        <strong>Tracking Number:</strong> {{$tracking_number}}
+                                                    </li>
+                                                </ul>
+                                                You can track the status of your shipment using the tracking number provided above by visiting our <a href="https://cdtexpress.com/track">tracking page</a>.
+                                                We are processing your shipment and it will be delivered to your address soon.
+                                            </p>
+
+                                            <p>
+                                                If you have any questions or need further assistance, please contact our customer service team at support@cdtexpress.com.
+                                            </p>
+                                        
+                                            <p>
+                                                Thank you for choosing our services. We look forward to delivering your package promptly.
+                                            </p>
 
                                             <p>
                                                 Best Regards, <br />
                                                 <strong> CD & T Express logistics company!</strong>
+                                                <p>support@cdtexpress.com</p>
+                                                <a  href="https://cdtexpress.com">cdtexpress.com</a>
+                                                <p>371 7th Ave, New York, NY 10001</p>
                                             </p>
-
-                                            <p>
-                                                <small><i>This is an automated message, please do not reply.</i></small><br>
-                                            </p>
-                                            <!-- Action -->
-                                        </div>
-                                    </td>
+                                        </div
+                                    </td
                                 </tr>
                             </table>
                         </td>
