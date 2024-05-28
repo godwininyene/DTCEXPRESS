@@ -35,7 +35,7 @@
             display: inline-block;
             padding: 10px 20px;
             font-size: 16px;
-            color: #ffffff;
+            color: #fff !important;
             background-color: #007bff;
             text-decoration: none;
             border-radius: 5px;
@@ -58,6 +58,8 @@
             <p>We are writing to inform you that we have received a package addressed to you from {{$sender}}.</p>
             <p><strong>Shipment Details:</strong></p>
             <p><strong>Tracking ID:</strong> {{$tracking_number}}</p>
+            <p><strong>Sender:</strong> {{$sender}}</p>
+            <p><strong>Estimated Delivery Date:</strong> {{$delivery_date}}</p>
             <p>You can check the status of your package using the tracking ID provided above by visiting our <a href="https://cdtexpress.com/track" class="button">Tracking Page</a>.</p>
             <p>We are processing your shipment and it will be delivered to your address soon.</p>
             <p>If you have any questions or need further assistance, please contact our customer service team at support@cdtexpress.com.</p>
