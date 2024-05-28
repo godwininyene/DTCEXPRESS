@@ -13,7 +13,7 @@ const AboutSection = () => {
                     <div className=' bg-white rounded-md'>
                         <div className='p-7 '>
                             <h2 className='text-4xl font-bold'>
-                                ExCD & T Express logistics company Around
+                                CD & T Express logistics company Around
                                 
                                 <span className='text-gold inline-block ml-1'>the Word</span>
                             </h2>

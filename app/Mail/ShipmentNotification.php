@@ -34,7 +34,7 @@ class ShipmentNotification extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject:  "Shipment Notification",
+            subject:  "Your Package from ".  $this->sender . " Has Been Received!",
         );
     }
 

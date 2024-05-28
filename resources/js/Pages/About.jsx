@@ -113,7 +113,7 @@ const About = () => {
             <div data-aos="fade-up" className='py-9 px-3'>
               <div className='text-xl italic px-6'>
                 <p className='mt-1'>
-                  Nevertheless our transportation abilities, ‘CD & T Express logistics companyservice’ has a
+                  Nevertheless our transportation abilities, ‘CD & T Express logistics company service’ has a
                   system of distribution centers deliberately situated in key residential areas.
                   With a joined impression of in excess of 3 million square feet over the U.K., 
                   we can meet our client’s stockpiling and satisfaction needs.
