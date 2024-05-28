@@ -17,6 +17,10 @@
             background-color: #ffffff;
             border: 1px solid #dddddd;
         }
+        .header{
+            padding: 25px 0;
+            background-color: #333333 !important;
+        }
         .header, .footer {
             text-align: center;
         }
@@ -39,82 +43,26 @@
     </style>
 </head>
 <body>
-    <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-        <tr>
-            <td align="center">
-                <table class="email-content" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                    <tr>
-                        <td class="email-masthead">
-                            <a href="https://cdtexpress.com" class="f-fallback email-masthead_name">
-                                <img src="{{ asset('logo.png') }}" alt="logo"
-                                    style="height:100px">
-                            </a>
-                        </td>
-                    </tr>
-                    <!-- Email Body -->
-                    <tr>
-                        <td class="email-body" width="100%" cellpadding="0" cellspacing="0">
-                            <table class="email-body_inner" align="center" width="570" cellpadding="0" cellspacing="0"
-                                role="presentation">
-                                <!-- Body content -->
-                                <tr>
-                                    <td class="content-cell">
-                                        <div class="f-fallback">
-                                           
-                                            <p><strong>Subject:</strong> Your Package from <strong> {{ $sender}}</strong> Has Been Received!</p>
-                                            <h4>Dear {{ $receiver }},</h4>
-                                                <p>
-                                                    We are excited to inform you that we have received a package with your details as the receiver from <strong>{{ $sender}}</strong>.
-                                                </p>
-                                                <p>
-                                                    <strong>Shipment Details:</strong>
-
-                                                    <ul>
-                                                        <li>
-                                                            <strong>Tracking Number:</strong> {{$tracking_number}}
-                                                        </li>
-                                                        <li>
-                                                            <strong>Sender:</strong> {{$sender}}
-                                                        </li>
-                                                        <li>
-                                                            <strong>Estimated Delivery Date:</strong> {{$delivery_date}}
-                                                        </li>
-                                                    </ul>
-                                                    You can track the status of your shipment using the tracking number provided above by visiting our <a href="https://cdtexpress.com/track">tracking page</a>.
-                                                </p>
-
-                                            <p>
-                                                Best Regards, <br />
-                                                <strong> CD & T Express logistics company!</strong>
-                                            </p>
-
-                                            <p>
-                                                <small><i>This is an automated message, please do not reply.</i></small><br>
-                                            </p>
-                                            <!-- Action -->
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table class="email-footer" align="center" width="570" cellpadding="0" cellspacing="0"
-                                role="presentation">
-                                <tr>
-                                    <td class="content-cell" align="center">
-                                        <p class="f-fallback sub align-center">&copy; {{ date('Y') }} 
-                                        CD & T Express logistics company. All rights reserved.
-                                        </p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+    <div class="container">
+        <div class="header">
+            <a href="https://cdtexpress.com" class="f-fallback email-masthead_name">
+                <img src="{{ asset('logo.png') }}" alt="logo"style="height:100px">
+            </a>
+        </div>
+        <div class="content">
+            <p>Dear {{$sender}},</p>
+            <p>We are writing to inform you that we have received a package addressed to you from {{$sender}}.</p>
+            <p><strong>Shipment Details:</strong></p>
+            <p><strong>Tracking ID:</strong> {{$tracking_number}}</p>
+            <p>You can check the status of your package using the tracking ID provided above by visiting our <a href="https://cdtexpress.com/track" class="button">Tracking Page</a>.</p>
+            <p>We are processing your shipment and it will be delivered to your address soon.</p>
+            <p>If you have any questions or need further assistance, please contact our customer service team at support@cdtexpress.com.</p>
+            <p>Thank you for choosing our services. We look forward to delivering your package promptly.</p>
+        </div>
+        <div class="footer">
+            <p>Best regards,<br>CD & T Express logistics company!<br>support@cdtexpress.com<br>https://cdtexpress.com<br>371 7th Ave, New York, NY 10001</p>
+            <p><a href="https://cdtexpress.com/unsubscribe">Unsubscribe</a></p>
+        </div>
+    </div>
 </body>
 </html>
