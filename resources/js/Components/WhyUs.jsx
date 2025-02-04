@@ -6,7 +6,7 @@ import {BsFillChatSquareFill, BsMapFill} from 'react-icons/bs'
 
 const WhyUs = ()=>{
     return(
-        <section className="why-us py-24 bg-grey-500 bg-cover bg-center bg-fixed">
+        <section className="why-us py-[50px] lg:py-[100px] bg-grey-500 bg-cover bg-center bg-fixed">
             <div className="max-w-[1140px] w-11/12 mx-auto">
                 <div className="max-w-4xl mx-auto ">
                     <h1 className="font-bold text-3xl lg:text-4xl uppercase text-center relative">Why Our Clients Chooses Us</h1>
@@ -18,12 +18,12 @@ const WhyUs = ()=>{
                 </div>
             </div>
 
-            <div className="max-w-[1140px] w-11/12 mx-auto">
+            <div className="max-w-[1140px]  mx-auto">
                 <div className=" my-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
 
                     <div className="py-1 mx-4 md:mx-0">
-                        <div data-aos="zoom-in-up" className="p-4 grid grid-cols-6 gap-4 shadow-md bg-white">
-                            <div className="text-right font-bold text-yellow-500">
+                        <div data-aos="zoom-in-up" className="p-4 grid grid-cols-1 md:grid-cols-6 gap-4 shadow-md bg-white">
+                            <div className="lg:text-right font-bold text-yellow-500">
                                 <FaShuttleVan className='text-3xl  inline-block'/>
                             </div>
                             <div className="col-span-5">
@@ -41,8 +41,8 @@ const WhyUs = ()=>{
 
 
                     <div className="py-1 mx-4 md:mx-0">
-                        <div data-aos="zoom-in-up" className="p-4 grid grid-cols-6 gap-4 shadow-md bg-white">
-                            <div className="text-right font-bold text-yellow-500">
+                        <div data-aos="zoom-in-up" className="p-4 grid grid-cols-1 md:grid-cols-6 gap-4 shadow-md bg-white">
+                            <div className="lg:text-right font-bold text-yellow-500">
                                 <BsMapFill  className='text-3xl  inline-block'/>
                             </div>
                             <div className="col-span-5">
@@ -57,8 +57,8 @@ const WhyUs = ()=>{
 
 
                     <div className="py-1 mx-4 md:mx-0">
-                        <div data-aos="zoom-in-up" className="p-4 grid grid-cols-6 gap-4 shadow-md bg-white">
-                            <div className="text-right font-bold text-yellow-500">
+                        <div data-aos="zoom-in-up" className="p-4 grid grid-cols-1 md:grid-cols-6 gap-4 shadow-md bg-white">
+                            <div className="lg:text-right font-bold text-yellow-500">
                                 <LuBike  className='text-4xl  inline-block'/>
                             </div>
                             <div className="col-span-5">
@@ -74,8 +74,8 @@ const WhyUs = ()=>{
 
 
                     <div className="py-1 mx-4 md:mx-0">
-                        <div data-aos="zoom-in-up" className="p-4 grid grid-cols-6 gap-4 shadow-md bg-white">
-                            <div className="text-right font-bold text-yellow-500">
+                        <div data-aos="zoom-in-up" className="p-4 grid grid-cols-1 md:grid-cols-6 gap-4 shadow-md bg-white">
+                            <div className="lg:text-right font-bold text-yellow-500">
                                 <BsFillChatSquareFill className='text-3xl  inline-block'/>
                             </div>
                             <div className="col-span-5">

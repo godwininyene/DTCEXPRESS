@@ -19,8 +19,8 @@ const Contact = () => {
             <meta name="keywords" content="CD & T Express logistics company, International logistics services,  logistics solution, courier delivery, sea freight, Air Freight, Land Freight" />
           </Head>
 
-          <div className="about-page-container  h-[318px] bg-center" style={{backgroundImage:`url(${bannerBg})`}}>
-              <div className={`bg-gradient-to-b pt-28 h-full from-[#000000ec] dark:from-[#000000da] via-[#000000b9] to-[#000000b9] dark:to-[#000000d5]  text-primary`}>
+          <div className="about-page-container bg-center" style={{backgroundImage:`url(${bannerBg})`}}>
+              <div className={`bg-gradient-to-b pt-10 lg:pt-28 h-full from-[#000000ec] dark:from-[#000000da] via-[#000000b9] to-[#000000b9] dark:to-[#000000d5]  text-primary`}>
                   <div className=' grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-7 gap-4 mx-auto max-w-6xl px-8 md:px-2'>
                       <div data-aos="zoom-in" className='lg:col-span-4'>
                           <div className='rounded text-white opacity py-12 p-2 md:px-1 items-center'>
@@ -45,13 +45,13 @@ const Contact = () => {
             </div>
             <div className='px-6 md:px-1 order-1'>
               <div data-aos="fade-up" className="mt-16 mb-4">
-                <h1 className='font-bold text-black text-4xl'>
+                <h1 className='font-bold text-black text-2xl lg:text-4xl'>
                   <strong>CD & T Express logistics company Services</strong>
                 </h1>
               </div>
               <div data-aos="fade-up" className='my-8 text-lg'>Feel free to contact us at anytime for our services!</div>
               <div data-aos="fade-up" className='mb-4'>
-                <p className='mb-3 flex items-center'>
+                <p className='mb-3 flex  flex-col lg:flex-row  lg:items-center'>
                   <strong className='inline-flex items-center'>
                     <FaEnvelope className='inline-block mr-1'/>
                     Email Us:   
@@ -60,9 +60,9 @@ const Contact = () => {
                     <a href="mailto:info@expresscourier.com" className='text-blue-600 inline-block pl-1'>support@cdtexpress.com</a>
                   </p>   
                 </p>
-                <span className='block -mt-4'>  We usually reply almost instantly!</span>
+                <span className='block my-4'>  We usually reply almost instantly!</span>
 
-                <p className='mt-3 flex items-center'>
+                <p className='mt-3 flex flex-col lg:flex-row  lg:items-center'>
                   <strong className='inline-flex items-center'>
                     <IoIosHeadset className='inline-block mr-1'/>
                     Call Us:   
@@ -95,7 +95,7 @@ const Contact = () => {
 
 
             <div className='col-md-6'>
-              <button id='btn_truck' data-aos="zoom-in" className='outline outline-white'>
+              <button id='btn_truck' data-aos="zoom-in" className='outline outline-white hidden lg:block'>
                 <FaShuttleVan className='text-3xl' />
               </button>
               <div data-aos="fade-up" className='col-md-12 py-4 bg-black'>

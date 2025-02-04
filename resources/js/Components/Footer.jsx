@@ -36,7 +36,7 @@ const Footer = ()=>{
                             <div className=''>
                                 <h3 className='font-bold uppercase'>Our Services</h3>
                                 <hr className='border-gray-100 my-3'/>
-                                <ul className='py-2 px-4'>
+                                <ul className='py-2'>
                                     <li className="mb-1">
                                         <Link href="services" className='flex items-center transition-all duration-100 hover:text-gold'>
                                             <FaShuttleVan className='mr-1'/>
@@ -75,7 +75,7 @@ const Footer = ()=>{
                             <div className=''>
                                 <h3 className='font-bold uppercase'>Quick Links</h3>
                                 <hr className='border-gray-100 my-3'/>
-                                <ul className='py-2 px-4'>
+                                <ul className='py-2'>
                                     <li className="mb-1">
                                         <Link href="track" className='flex items-center transition-all duration-100 hover:text-gold'>
                                             <FaArrowAltCircleRight className='mr-1'/>
@@ -115,7 +115,7 @@ const Footer = ()=>{
                                 <h3 className='font-bold uppercase'>Contacts</h3>
                                 <hr className='border-gray-100 my-3'/>
 
-                                <ul className='py-2 px-4'>
+                                <ul className='py-2'>
                                     <li className="mb-1">
                                         <Link href="" className='flex items-center'>
                                             <BsMapFill className='mr-1'/>
@@ -149,7 +149,7 @@ const Footer = ()=>{
                     </div>
                 </div>
                 <hr className="border-gray-50 mt-6"/>
-                <div className='text-center text-gray-50 p-4 font-bold'>
+                <div className='text-center text-gray-50 p-4 font-bold text-sm'>
                     Copyright &copy; CD & T Express logistics company {new Date().getFullYear()}
                 </div>
             </div>

@@ -4,9 +4,9 @@ import {FaLightbulb, FaSteam, FaThumbsUp, FaTools} from 'react-icons/fa';
 
 const Extra = () => {
   return (
-    <section className="py-10 bg-white">
+    <section className="py-[50px] lg:py-[100px] bg-white px-3 lg:px-0">
        
-            <div className='md:grid md:grid-cols-2 lg:grid-cols-4 gap-3 p-6'>
+            <div className='md:grid md:grid-cols-2 lg:grid-cols-4 gap-3'>
 
                 <div className='shadow-xl cursor-pointer font-sans text-center rounded-lg p-5' data-aos="flip-left" data-aos-easing="ease-out-cubic">
                     <FaSteam  className='text-3xl  inline-block mr-1'/>

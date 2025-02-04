@@ -4,7 +4,7 @@ import bgImg from '@/Assets/images/ship4new.jpg'
 const CTA = () => {
   return (
     <div className='' style={{backgroundImage:`url(${bgImg})`}}>
-        <div className='max-w-6xl text-white mx-auto p-10'>
+        <div className='max-w-6xl text-white mx-auto p-3 lg:p-10'>
             <h1 className=' text-3xl md:text-4xl text-bold font-sans'>Reach your destination 100% safe</h1>
             <p className='text-lg font-sans'>
                 CD & T Express logistics company Services has made a name for it self globally,

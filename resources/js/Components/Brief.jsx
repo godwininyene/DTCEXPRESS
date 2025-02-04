@@ -13,9 +13,9 @@ const Brief = () => {
                 </div>
             </div>
 
-            <div data-aos="fade-up" className='unique py-12 px-5 w-full bg-white text-black aos-init aos-animate'>
+            <div data-aos="fade-up" className='unique py-12 lg:px-5 w-full bg-white text-black aos-init aos-animate'>
                 <div className=''>
-                  <h1 className='font-bold text-2xl md:text-3xl mt-10 px-5'>Logistics Solutions For Your Industry.</h1>
+                  <h1 className='font-bold text-2xl md:text-3xl lg:mt-10 px-5'>Logistics Solutions For Your Industry.</h1>
                   <p className='text-black px-5 py-10'>
                     Our Services is skillfully managed and monitored from collection to delievery.
                     Our steadfast services can be trusted & Wide range of Network 

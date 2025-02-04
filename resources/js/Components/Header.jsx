@@ -2,9 +2,9 @@ import React from 'react';
 import {Link } from '@inertiajs/react';
 import logo from '@/Assets/images//logo.png'
 import {LuMenu} from 'react-icons/lu';
-import {IoIosHome, IoMdInformationCircle, IoIosHeadset, IoIosLogIn, IoIosPersonAdd} from 'react-icons/io';
+import{MdClose} from 'react-icons/md';
+import {IoIosHome, IoMdInformationCircle, IoIosHeadset} from 'react-icons/io';
 import {MdMedicalServices} from 'react-icons/md';
-import {BsMapFill} from 'react-icons/bs';
 
 const Header = () => {
     const[isOpen, setIsOpen] = React.useState(false);
@@ -18,11 +18,12 @@ const Header = () => {
     window.addEventListener('scroll', addFixedClass	)
     
     const fixedHeader ={
-        position: "fixed",
-        top: "0", 
-        left: "0",
-        width:"100%",
-        zIndex: "99",
+        // position: "fixed",
+        // top: "0", 
+        // left: "0",
+        // width:"100%",
+        // zIndex: "99",
+        backgroundColor:'#1F2235',
         borderBottom: "2px solid #FFB400",
         boxShadow:"0 10px 5px rgba(15, 16, 24, 0.1)",
     }
@@ -30,7 +31,7 @@ const Header = () => {
     const activeStyle={color:'#F17600'};
  
     return(
-        <div className={`header bg-primary ${isFixedClass ? 'animate-fadeInDown' :''}`} style={isFixedClass ? fixedHeader : {}}>
+        <div className={`header fixed w-full z-50 left-0 top-0 ${isFixedClass ? 'animate-fadeInDown' :''}`} style={isFixedClass ? fixedHeader : {}}>
             <div className='max-w-[1140px] mx-auto w-full'> 
 
                 <nav className='flex items-center  justify-between flex-wrap lg:flex-nowrap px-5 py-2 relative'>
@@ -40,11 +41,20 @@ const Header = () => {
 
                     {/*Mobile Nav Icon */}
                     <button className=' border-0 outline-0 shadow-none block lg:hidden' onClick={toggleMenu}>
-                        <LuMenu className='text-3xl text-white'/>
+                       
+                        {
+                            (!isOpen) ?(
+                                    <LuMenu className="text-3xl  inline text-white"/>
+                                )
+                                
+                                :(
+                                    <MdClose className="text-3xl  inline-block text-white"/>
+                            ) 
+                        }
                     </button>
 
-                    <div className={`${isOpen ? 'h-44': 'h-0'} overflow-hidden lg:h-auto lg:flex items-center basis-full grow transition-all duration-300 ease-linear`}>
-                        <ul className='flex-col  lg:flex-row flex items-center ml-auto' id='header-nav'>
+                    <div className={`${isOpen ? 'h-56 bg-primary mt-3 rounded ': 'h-0'} overflow-hidden lg:h-auto lg:flex items-center basis-full grow transition-all duration-300 ease-linear`}>
+                        <ul className='flex-col lg:flex-row flex lg:items-center ml-auto py-4 lg:py-0' id='header-nav'>
                            
                             <li className=''>
                                 <Link href="/" className={`text-base font-bold ${route().current('home') ? 'text-gold': 'text-white'} py-3 px-4 hover:text-gold cursor-pointer flex items-center `} >

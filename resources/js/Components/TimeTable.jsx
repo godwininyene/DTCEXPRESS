@@ -6,7 +6,7 @@ import {Link } from '@inertiajs/react';
 
 const TimeTable = () => {
   return (
-    <div className='bg-primary'>
+    <div className='bg-primary px-3 lg:px-0'>
         <div className='max-w-6xl py-6 mx-auto  divide-x gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
            
             <div data-aos="zoom-in" className='py-2 text-white flex'>

@@ -5,13 +5,13 @@ import img3 from '@/Assets/images/bg-3.jpeg'
 import {Link } from '@inertiajs/react';
 const AboutSection = () => {
   return (
-    <section className="py-24 bg-primary overflow-hidden">
-        <div className="max-w-[1140px] w-11/12 mx-auto">
+    <section className="py-[50px] lg:py-[100px] bg-primary overflow-hidden px-3 lg:px-0">
+        <div className="max-w-[1140px] mx-auto">
             <div className='flex gap-x-12 flex-col lg:flex-row items-center'>
 
                 <div className='w-full lg:w-2/4 flex-shrink-0' data-aos="fade-right" data-aos-offset="350">
                     <div className=' bg-white rounded-md'>
-                        <div className='p-7 '>
+                        <div className='p-3 lg:p-7 '>
                             <h2 className='text-4xl font-bold'>
                                 CD & T Express logistics company Around
                                 
@@ -35,8 +35,8 @@ const AboutSection = () => {
                     </div>
                 </div>
 
-                <div className='w-full lg:w-2/4 flex-shrink-0 h-[300px]' >
-                <div className="composition h-full" data-aos-offset="350" data-aos-easing="fade-up">
+                <div className='w-full lg:w-2/4 flex-shrink-0 h-[300px] mt-10 lg:mt-0' >
+                    <div className="composition h-full" data-aos-offset="350" data-aos-easing="fade-up">
 						<img src={img1} className="composition-photo composition-photo-0" />
 						<img src={img2} className="composition-photo composition-photo-1" />
 						<img src={img3} className="composition-photo composition-photo-2" />
