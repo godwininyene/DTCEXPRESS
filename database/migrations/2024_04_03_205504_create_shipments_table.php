@@ -29,8 +29,8 @@ return new class extends Migration
             $table->string('receiver_address');
 
             // Shipment Details
-            $table->string('carrier')->default('Express Logistics Courier');
-            $table->string('carrier_ref_no')->default('ELC48634');
+            $table->string('carrier')->default('CD&T Logistics Courier');
+            $table->string('carrier_ref_no')->default('CDT48634');
             $table->string('tracking_num');
             $table->string('shipment_type');
             $table->string('packages');

@@ -43,7 +43,7 @@
 	top: 100px;
 }
 .composition .composition-photo:hover{
-	outline: 15px solid#F17600;
+	outline: 15px solid#3ea2ee;
 	transform: scale(1.05) translateY(-.5px);
 	box-shadow: 0 25px 40px rgba(0,0,0,.5);
 	z-index: 20;

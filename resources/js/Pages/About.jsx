@@ -24,7 +24,7 @@ const About = () => {
                                 About Us
                             </span>
                             <span className='block text-3xl font-bold uppercase'>CD & T Express logistics company</span>
-                            <hr className='w-1/4 border-2 border-yellow-400' />
+                            <hr className='w-1/4 border-2 border-gold' />
                         </div>  
                     </div>
                 </div>
@@ -79,7 +79,7 @@ const About = () => {
         </section>
 
         
-      <section className='h-30'>
+      <section className=''>
         <div className=''>
           <div className='max-w-6xl py-6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
             

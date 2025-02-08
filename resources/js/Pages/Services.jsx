@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link, Head } from '@inertiajs/react';
 import BaseLayout from '@/Layouts/BaseLayout'
-import bannerBg from '@/Assets/images/banner_bg.jpg';
+// import bannerBg from '@/Assets/images/banner_bg.jpg';
+import bannerBg from '@/Assets/images/van.webp'
 import {MdMedicalServices} from 'react-icons/md'
 import { FaSteam,FaTools,FaThumbsUp,FaLightbulb,FaQuoteLeft } from 'react-icons/fa';
 
@@ -23,7 +24,7 @@ const Services = () => {
                               Our Services
                           </span>
                           <span className='block text-3xl font-bold uppercase'>CD & T Express logistics company</span>
-                          <hr className='w-1/4 border-2 border-yellow-400' />
+                          <hr className='w-1/4 border-2 border-gold' />
                       </div>
                   </div>
               </div>
@@ -126,7 +127,7 @@ const Services = () => {
                     <div className="my-1">
 
                         <div className='w-full bg-gray-400  bg-opacity-25 overflow-hidden'>
-                            <div className='px-3 text-white bg-gray-800 text-right w-[83.5%]'>
+                            <div className='px-3 text-white bg-primary text-right w-[83.5%]'>
                                <small> 83.5%</small>
                             </div>
                         </div>
@@ -143,7 +144,7 @@ const Services = () => {
                     <div className="my-1">
 
                         <div className='w-full bg-gray-400  bg-opacity-25 overflow-hidden'>
-                            <div className='px-3 text-white bg-gray-800 text-right w-[57.4%]'>
+                            <div className='px-3 text-white bg-primary text-right w-[57.4%]'>
                             <small> 57.4%</small>
                             </div>
                         </div>
@@ -160,7 +161,7 @@ const Services = () => {
                     <div className="my-1">
 
                         <div className='w-full bg-gray-400  bg-opacity-25 overflow-hidden'>
-                            <div className='px-3 text-white bg-gray-800 text-right w-[76.3%]'>
+                            <div className='px-3 text-white bg-primary text-right w-[76.3%]'>
                             <small> 76.3%</small>
                             </div>
                         </div>
@@ -178,7 +179,7 @@ const Services = () => {
                     <div className="my-1">
 
                         <div className='w-full bg-gray-400  bg-opacity-25 overflow-hidden'>
-                            <div className='px-3 text-white bg-gray-800 text-right w-[99.9%]'>
+                            <div className='px-3 text-white bg-primary text-right w-[99.9%]'>
                             <small> 99.9%</small>
                             </div>
                         </div>

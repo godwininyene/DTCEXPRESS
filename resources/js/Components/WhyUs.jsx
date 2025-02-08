@@ -23,7 +23,7 @@ const WhyUs = ()=>{
 
                     <div className="py-1 mx-4 md:mx-0">
                         <div data-aos="zoom-in-up" className="p-4 grid grid-cols-1 md:grid-cols-6 gap-4 shadow-md bg-white">
-                            <div className="lg:text-right font-bold text-yellow-500">
+                            <div className="lg:text-right font-bold text-gold">
                                 <FaShuttleVan className='text-3xl  inline-block'/>
                             </div>
                             <div className="col-span-5">
@@ -42,7 +42,7 @@ const WhyUs = ()=>{
 
                     <div className="py-1 mx-4 md:mx-0">
                         <div data-aos="zoom-in-up" className="p-4 grid grid-cols-1 md:grid-cols-6 gap-4 shadow-md bg-white">
-                            <div className="lg:text-right font-bold text-yellow-500">
+                            <div className="lg:text-right font-bold text-gold">
                                 <BsMapFill  className='text-3xl  inline-block'/>
                             </div>
                             <div className="col-span-5">
@@ -58,7 +58,7 @@ const WhyUs = ()=>{
 
                     <div className="py-1 mx-4 md:mx-0">
                         <div data-aos="zoom-in-up" className="p-4 grid grid-cols-1 md:grid-cols-6 gap-4 shadow-md bg-white">
-                            <div className="lg:text-right font-bold text-yellow-500">
+                            <div className="lg:text-right font-bold text-gold">
                                 <LuBike  className='text-4xl  inline-block'/>
                             </div>
                             <div className="col-span-5">
@@ -75,7 +75,7 @@ const WhyUs = ()=>{
 
                     <div className="py-1 mx-4 md:mx-0">
                         <div data-aos="zoom-in-up" className="p-4 grid grid-cols-1 md:grid-cols-6 gap-4 shadow-md bg-white">
-                            <div className="lg:text-right font-bold text-yellow-500">
+                            <div className="lg:text-right font-bold text-gold">
                                 <BsFillChatSquareFill className='text-3xl  inline-block'/>
                             </div>
                             <div className="col-span-5">

@@ -7,11 +7,25 @@ import {IoIosHeadset} from 'react-icons/io';
 import {FaArrowCircleDown, FaArrowCircleUp, FaEnvelope,FaShuttleVan} from 'react-icons/fa';
 import {BsMapFill} from 'react-icons/bs';
 import { faqs } from '@/Data/data';
+import { SiPolkadot } from 'react-icons/si';
 
 const Contact = () => {
-    const [ID, setID] = useState(null);
+  const [ID, setID] = useState(null);
 
-    const toggleID = ID=>setID(prevID=> prevID == null ? ID :null)
+  const toggleID = ID=>setID(prevID=> prevID == null ? ID :null)
+
+  const[loading, setLoading] = useState(false);
+  const[done, setDone] = useState(false)
+  const handleSubmit = async e=>{
+    e.preventDefault();
+    setLoading(true);
+    setDone(false)
+    setTimeout(()=>{
+      setLoading(false)
+      setDone(true)
+    }, 3000);
+  }
+
   return (
         <BaseLayout>
           <Head title="Contact - CD & T Express">
@@ -29,7 +43,7 @@ const Contact = () => {
                                   Our Contact
                               </span>
                               <span className='block text-3xl font-bold uppercase'>CONTACT & INSTANT FEEDBACK</span>
-                              <hr className='w-1/4 border-2 border-yellow-400' />
+                              <hr className='w-1/4 border-2 border-gold' />
                           </div>
                       </div>
                   </div>  
@@ -146,7 +160,8 @@ const Contact = () => {
               <div className='container'>
                 <div className='row'>
                   <div data-aos="fade-up" className='py-3 px-4'>
-                    <form className=''>
+
+                    <form className='' onSubmit={handleSubmit}>
                       <div className="row">
                         <div className='form-group col-md-12 mb-4'>
                           <input 
@@ -207,11 +222,23 @@ const Contact = () => {
 
                         </div>
                       </div>
+
+                      {
+                        done &&(
+                          <div className='w-full mb-4'>
+                              <p className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg shadow-md">
+                                Thank you for your interest in our courier and logistics services!
+                                Your request for quote has been successfully submitted.
+                                Our team will review your request and get back to you shortly.
+                              </p>
+                          </div>
+                        )
+                      }
                       <div className="row">
                         <div className='form-group col-md-12 mb-3'>
                            
                           <button className='inline-block text-white bg-gold leading-[46px]  rounded-md font-semibold px-8 border-2 border-transparent ps-3 pe-3 transition-all duration-300 ease-in hover:border-gold hover:bg-transparent hover:text-gold'>
-                               Send Message
+                            {loading ?  <SiPolkadot className={`animate-spin duration-1000 h-7 w-7`} /> : 'Send Message'}
                           </button>
                         </div>
                       </div>

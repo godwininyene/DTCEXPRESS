@@ -13,11 +13,11 @@ export default {
     theme: {
         extend: {
             backgroundColor : {
-                primary: '#1F2235',
+                primary: '#1b3a5d',
                 'primary-light':'#24263B',
               },
               colors:{
-                gold:"#F17600",
+                gold:"#3ea2ee",
               },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
@@ -36,3 +36,5 @@ export default {
 
     plugins: [forms],
 };
+
+

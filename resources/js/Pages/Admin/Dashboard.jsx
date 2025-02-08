@@ -224,7 +224,7 @@ export default function Dashboard({ auth}) {
 
                             <div className=''>
                                 <PrimaryButton className="inline-flex items-center justify-center gap-2 items-bottom bg-primary dark:bg-[#F17600] dark:hover:bg-yellow-500 dark:hover:text-white dark:text-white hover:bg-gold rounded-md font-semibold px-2 py-3 transition-all duration-300 ease-in  text-white" disabled={processing}>
-                                { (processing) ? <Loader /> : <span>Create Shipment</span>}
+                                { (processing) ? <Loader /> : <span>Update History</span>}
                                 </PrimaryButton>
                             </div>
                         </div>

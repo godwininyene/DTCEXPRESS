@@ -18,18 +18,11 @@ const Header = () => {
     window.addEventListener('scroll', addFixedClass	)
     
     const fixedHeader ={
-        // position: "fixed",
-        // top: "0", 
-        // left: "0",
-        // width:"100%",
-        // zIndex: "99",
-        backgroundColor:'#1F2235',
-        borderBottom: "2px solid #FFB400",
+        backgroundColor:'#1b3a5d',
+        borderBottom: "2px solid #3ea2ee",
         boxShadow:"0 10px 5px rgba(15, 16, 24, 0.1)",
     }
-  
-    const activeStyle={color:'#F17600'};
- 
+   
     return(
         <div className={`header fixed w-full z-50 left-0 top-0 ${isFixedClass ? 'animate-fadeInDown' :''}`} style={isFixedClass ? fixedHeader : {}}>
             <div className='max-w-[1140px] mx-auto w-full'> 
@@ -57,7 +50,7 @@ const Header = () => {
                         <ul className='flex-col lg:flex-row flex lg:items-center ml-auto py-4 lg:py-0' id='header-nav'>
                            
                             <li className=''>
-                                <Link href="/" className={`text-base font-bold ${route().current('home') ? 'text-gold': 'text-white'} py-3 px-4 hover:text-gold cursor-pointer flex items-center `} >
+                                <Link href="/" className={`text-base font-bold ${route().current('/') ? 'text-gold': 'text-white'} py-3 px-4 hover:text-gold cursor-pointer flex items-center `} >
                                     <IoIosHome className='text-base  inline-block mr-1'/>
                                    Home
                                 </Link>
@@ -82,6 +75,8 @@ const Header = () => {
                                     <IoIosHeadset className='text-base  inline-block mr-1'/>
                                     Contact Us
                                 </Link>
+
+                              
                             </li>
                           
                         </ul>

@@ -1,19 +1,12 @@
 import React from 'react'
-import {Head } from '@inertiajs/react';
+import { Link, Head } from '@inertiajs/react';
 import BaseLayout from '@/Layouts/BaseLayout';
+// import bannerBg from '@/Assets/images/banner_bg.jpg';
 import bannerBg from '@/Assets/images/van.webp'
 import Logo from '@/Assets/images/logo.png';
 import Barcode from '@/Assets/images/barcode.png'
 import {BsMapFill} from 'react-icons/bs';
-import { IoTimerOutline } from "react-icons/io5";
-import { GiCardPickup } from "react-icons/gi";
-import {
-    FaMapMarkerAlt,
-    FaPauseCircle,
-    FaRegTimesCircle,
-    FaShippingFast,
-} from "react-icons/fa";
-import { FaCircleCheck } from "react-icons/fa6";
+import Loader from '@/Components/Loader';
 import spinner from '@/Assets/images/loader.gif';
 
 
@@ -183,56 +176,13 @@ const Track = () => {
                             </div>
 
                             <div className="max-w-5xl mx-auto mt-7">
-                                {/* Shipment date and Route */}
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-7 print:grid-cols-2">
-                                    <div className="">
-                                        <div className="bg-gold px-1 text-lg h-8 flex items-center text-slate-100">
-                                            <h1> Shipment Date</h1>
-                                        </div>
-                                        <div className="">
-                                            <p className='text-gray-800 font-black'> 
-                                                Estimated Time of Departure(ETD):
-                                            </p>
-                                            <p className='text-gray-400 font-semibold mb-2'>{shipment.delivery_date}</p>
-                                           
-                                            <p className='text-gray-800 font-black'> 
-                                                Estimated Time of Arrival  (ETA):
-                                            </p>
-                                            <p className='text-gray-400 font-semibold mb-2'>{shipment.pickup_date}</p>
-                                        </div>
-                                    </div>
-                                    <div className="">
-                                        <div className="bg-gold px-1 text-lg h-8 flex items-center text-slate-100">
-                                            <h1>
-                                                Parcel
-                                                Route
-                                            </h1>
-                                        </div>
-                                        <div className="">
-                                            <p className='text-gray-800 font-black'> 
-                                               From
-                                            </p>
-                                            <p className='text-gray-400 font-semibold mb-2'>{shipment.origin}</p>
-                                           
-                                            <p className='text-gray-800 font-black'> 
-                                               To
-                                            </p>
-                                            <p className='text-gray-400 font-semibold mb-2'>{shipment.destination}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
 
                                 {/* Shipper and Receiver Information Starts Here */}
                                 <div className='grid grid-cols-1 md:grid-cols-2 gap-7 print:grid-cols-2'>
 
                                     <div className=''>
-                                        {/* <h3 className='font-black uppercase mb-3 text-gray-900'>Shipper Information</h3>
-                                        <hr className='border-[1.5px] border-gray-300'/> */}
-
-                                        <div className="bg-gold px-1 text-lg h-8 flex items-center text-slate-100">
-                                            <h1>Shipper Information</h1>
-                                        </div>
+                                        <h3 className='font-black uppercase mb-3 text-gray-900'>Shipper Information</h3>
+                                        <hr className='border-[1.5px] border-gray-300'/>
 
                                         <div className=''>
                                             <p className='text-gray-500 font-semibold mb-1'>{shipment.shipper_name}</p>
@@ -244,12 +194,8 @@ const Track = () => {
 
 
                                     <div className=''>
-                                        {/* <h3 className='font-black uppercase mb-3 text-gray-900'>Receiver Information</h3>
-                                        <hr className='border-[1.5px] border-gray-300'/> */}
-
-                                        <div className="bg-gold px-1 text-lg h-8 flex items-center text-slate-100">
-                                            <h1>Receiver Information</h1>
-                                        </div>
+                                        <h3 className='font-black uppercase mb-3 text-gray-900'>Receiver Information</h3>
+                                        <hr className='border-[1.5px] border-gray-300'/>
 
                                         <div className=''>
                                             <p className='text-gray-500 font-semibold mb-1'>{shipment.receiver_name}</p>
@@ -267,43 +213,39 @@ const Track = () => {
 
                                 {/* Shipment Information Start here */}
                                 <div className=''>
-                                    {/* <h3 className='font-black uppercase mb-1 text-gray-900'>Shipment Information</h3>
-                                    <hr className='border-[1.5px] border-gray-300'/> */}
-                                    <div className="bg-gold px-1 text-lg h-8 flex items-center text-slate-100">
-                                        <h1>Shipment Information</h1>
-                                    </div>
-                                    
+                                    <h3 className='font-black uppercase mb-1 text-gray-900'>Shipment Information</h3>
+                                    <hr className='border-[1.5px] border-gray-300'/>
                                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 gap-7'>
 
                                         <div className=''>
-                                            <p className='text-gray-800 font-semibold'>Origin</p>
+                                            <p className='text-gray-800 font-black'>Origin</p>
                                             <p className='text-gray-400 font-semibold mb-2'>{shipment.origin}</p>
-                                            <p className='text-gray-800 font-semibold'>Destination</p>
+                                            <p className='text-gray-800 font-black'>Destination</p>
                                             <p className='text-gray-400 font-semibold mb-2'>{shipment.destination}</p>
-                                            <p className='text-gray-800 font-semibold'>Weight</p>
+                                            <p className='text-gray-800 font-black'>Weight</p>
                                             <p className='text-gray-400 font-semibold mb-2'>{shipment.weight}</p>
-                                            <p className='text-gray-800 font-semibold'>Product</p>
+                                            <p className='text-gray-800 font-black'>Product</p>
                                             <p className='text-gray-400 font-semibold mb-2'>{shipment.product}</p>
-                                            <p className='text-gray-800 font-semibold'>Total Freight</p>
+                                            <p className='text-gray-800 font-black'>Total Freight</p>
                                             <p className='text-gray-400 font-semibold mb-2'>{shipment.total_freight}</p>
-                                            <p className='text-gray-800 font-semibold'>Pickup Date</p>
+                                            <p className='text-gray-800 font-black'>Pickup Date</p>
                                             <p className='text-gray-400 font-semibold mb-2'>{shipment.pickup_date}</p>
-                                            <p className='text-gray-800 font-semibold'>Comment</p>
+                                            <p className='text-gray-800 font-black'>Comment</p>
                                             <p className='text-gray-400 font-semibold mb-2'>{shipment.comment}</p>
                                         </div>
 
                                         <div className=''>
-                                            <p className='text-gray-800 font-semibold'>Package</p>
+                                            <p className='text-gray-800 font-black'>Package</p>
                                             <p className='text-gray-400 font-semibold mb-2'>{shipment.packages}</p>
                                             <p className='text-gray-800 font-black'>Carrier</p>
                                             <p className='text-gray-400 font-semibold mb-2'>{shipment.carrier}</p>
-                                            <p className='text-gray-800 font-semibold'>Shipment Mode</p>
+                                            <p className='text-gray-800 font-black'>Shipment Mode</p>
                                             <p className='text-gray-400 font-semibold mb-2'>{shipment.mode}</p>
-                                            <p className='text-gray-800 font-semibold'>Qty</p>
+                                            <p className='text-gray-800 font-black'>Qty</p>
                                             <p className='text-gray-400 font-semibold mb-2'>{shipment.quantity}</p>
-                                            <p className='text-gray-800 font-semibold'>Expected Delivery Date</p>
+                                            <p className='text-gray-800 font-black'>Expected Delivery Date</p>
                                             <p className='text-gray-400 font-semibold mb-2'>{shipment.delivery_date}</p>
-                                            <p className='text-gray-800 font-semibold'>Pickup Time</p>
+                                            <p className='text-gray-800 font-black'>Pickup Time</p>
                                             <p className='text-gray-400 font-semibold mb-2'>{shipment.pickup_time}</p>
                                         </div>
 
@@ -324,86 +266,11 @@ const Track = () => {
                                 {/* Shipment information Ends Here */}
 
                                 {/* Shippment History Starts Here */}
-                                <div className='mt-5'>
-                                
-                                    <div className="bg-gold px-1 text-lg h-8 flex items-center text-slate-100">
-                                        <h1>Shipment History</h1>
-                                    </div>
+                                    <div className='mt-5'>
+                                    <h3 className='font-black uppercase mb-1 text-gray-900'>Shipment History</h3>
+                                    <hr className='border-[1.5px] border-gray-300'/>
 
-                                    <div className="grid   text-base">
-                                        {shipment?.history &&
-                                            shipment.history.map(
-                                                (
-                                                    el
-                                                ) => (
-                                                    <div className="mx-4 border-gold border-dashed border-l-2 relative py-5">
-                                                        <div className="col-span-2  px-5">
-                                                            <h1 className="text-lg font-semibold">
-                                                                {/* Remark:{" "} */}
-                                                                {
-                                                                    el.remark
-                                                                }
-                                                            </h1>
-                                                    
-                                                            <p className="text-base">
-                                                               <span className='text-gray-800 font-semibold'>Current Location:{" "}</span>
-                                                               <span className='text-gray-400'>{el.location}</span>
-                                                            </p>
-                                                            <p className="text-base">
-                                                               <span className='text-gray-800 font-semibold'> Shipment Status: </span>
-                                                               <span className='text-gray-400'>{el.status}</span>
-                                                            </p>
-                                                            <p className="text-base">
-                                                               <span className='text-gray-800 font-semibold'>Date: </span>
-                                                               <span className='text-gray-400'>{el.date}</span>
-                                                            </p>
-
-                                                            <p className="text-base">
-                                                               <span className='text-gray-800 font-semibold'>Time: </span>
-                                                               <span className='text-gray-400'>{el.time}</span>
-                                                            </p>
-                                                        </div>
-                                                        <div className="absolute -left-[1rem] top-14 bg-white">
-                                                            {/* {el.status == 'On Hold' ? (<FaSpinner className='text-3xl text-[#6b7280]' />) : (<FaRegCheckCircle className='text-3xl text-[#6b7280]' />)} */}
-                                                            {el.status ==
-                                                            "Pending" ? (
-                                                                <IoTimerOutline className="text-3xl" />
-                                                            ) : el.status ==
-                                                                "Picked Up" ? (
-                                                                <GiCardPickup className="text-3xl" />
-                                                            ) : el.status ==
-                                                                "On Hold" ? (
-                                                                <FaPauseCircle className="text-3xl" />
-                                                            ) : el.status ==
-                                                                "Out for delivery" ? (
-                                                                <FaCircleCheck className="text-3xl" />
-                                                            ) : el.status ==
-                                                                "In Transit" ? (
-                                                                <FaShippingFast className="text-3xl" />
-                                                            ) : el.status ==
-                                                                "Enroute" ? (
-                                                                <FaMapMarkerAlt className="text-3xl" />
-                                                            ) : el.status ==
-                                                                "Delivered" ? (
-                                                                <FaCircleCheck className="text-3xl text-green-600" />
-                                                            ) : el.status ==
-                                                                "Returned" ? (
-                                                                <FaRegTimesCircle className="text-3" />
-                                                            ) : (
-                                                                el.status ==
-                                                                (
-                                                                    <FaRegPauseCircle className="text-3xl" />
-                                                                )
-                                                            )}
-                                                            {}
-                                                        </div>
-                                                    </div>
-                                                )
-                                            )}
-                                    </div>
-
-
-                                    {/* <div className='mt-3 '>
+                                    <div className='mt-3'>
                                         <table className='w-full'>
                                             <thead className='bg-primary text-white'>
                                                 <th className='px-4 py-2 text-center border-r border-r-gray-100'>Date</th>
@@ -418,7 +285,7 @@ const Track = () => {
                                                     shipment?.history && shipment?.history.length >0 &&(
                                                         shipment.history.map(history=>(
                                                             <tr key={history.id}className='border-b border-b-gray-300'>
-                                                           
+                                                            {/* Rearrange the date */}
                                                             <td className='text-center'>{history.date}</td>
                                                             <td className='text-center'>{history.time}</td>
                                                             <td className='text-center'>{history.location}</td>
@@ -431,8 +298,8 @@ const Track = () => {
                                                 }
                                             </tbody>
                                         </table>
-                                    </div> */}
-                                </div>
+                                    </div>
+                                    </div>
                                 {/* Shippment History Ends Here */}
                                 
                             </div>

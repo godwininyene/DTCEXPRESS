@@ -34,7 +34,7 @@ const Praisal = () => {
                     <div className="my-1">
 
                         <div className='w-full bg-gray-400  bg-opacity-25 overflow-hidden'>
-                            <div className='px-3 text-white bg-gray-800 text-right w-[83.5%]'>
+                            <div className='px-3 text-white bg-primary text-right w-[83.5%]'>
                                <small> 83.5%</small>
                             </div>
                         </div>
@@ -51,7 +51,7 @@ const Praisal = () => {
                     <div className="my-1">
 
                         <div className='w-full bg-gray-400  bg-opacity-25 overflow-hidden'>
-                            <div className='px-3 text-white bg-gray-800 text-right w-[57.4%]'>
+                            <div className='px-3 text-white bg-primary text-right w-[57.4%]'>
                             <small> 57.4%</small>
                             </div>
                         </div>
@@ -68,7 +68,7 @@ const Praisal = () => {
                     <div className="my-1">
 
                         <div className='w-full bg-gray-400  bg-opacity-25 overflow-hidden'>
-                            <div className='px-3 text-white bg-gray-800 text-right w-[76.3%]'>
+                            <div className='px-3 text-white bg-primary text-right w-[76.3%]'>
                             <small> 76.3%</small>
                             </div>
                         </div>
@@ -86,7 +86,7 @@ const Praisal = () => {
                     <div className="my-1">
 
                         <div className='w-full bg-gray-400  bg-opacity-25 overflow-hidden'>
-                            <div className='px-3 text-white bg-gray-800 text-right w-[99.9%]'>
+                            <div className='px-3 text-white bg-primary text-right w-[99.9%]'>
                             <small> 99.9%</small>
                             </div>
                         </div>
