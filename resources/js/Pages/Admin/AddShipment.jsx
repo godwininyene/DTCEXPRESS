@@ -181,7 +181,7 @@ const AddShipment = ({auth}) => {
                                     <select 
                                         required
                                         name="shipment_type"  
-                                        className="w-[36%] border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-gold  focus:ring-0 dark:focus:ring-indigo-600 rounded-md shadow-sm"
+                                        className="w-full lg:w-[36%] border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-gold  focus:ring-0 dark:focus:ring-indigo-600 rounded-md shadow-sm"
                                     >
                                         <option value='' defaultValue="selected">- Select -</option>
                                         <option value="Van Move">Van Move</option>
@@ -384,12 +384,12 @@ const AddShipment = ({auth}) => {
                                 </div>
 
                                 <div className='flex mb-3 md:items-center flex-col md:flex-row'>
-                                    <div className='w-[147px]'>Comment</div>
+                                    <div className='w-full lg:w-[147px]'>Comment</div>
                                     <textarea 
                                         type="text" 
                                         name="comment"  
                                         placeholder="Comment" 
-                                        className="w-[36%] border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-gold  focus:ring-0 dark:focus:ring-indigo-600 rounded-md shadow-sm"
+                                        className="w-full lg:w-[36%] border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-gold  focus:ring-0 dark:focus:ring-indigo-600 rounded-md shadow-sm"
                                     />
                                 </div>
 

@@ -46,7 +46,7 @@ const Header = () => {
                         }
                     </button>
 
-                    <div className={`${isOpen ? 'h-56 bg-primary mt-3 rounded ': 'h-0'} overflow-hidden lg:h-auto lg:flex items-center basis-full grow transition-all duration-300 ease-linear`}>
+                    <div className={`${isOpen ? 'h-80 bg-primary mt-3 rounded ': 'h-0'} overflow-hidden lg:h-auto lg:flex items-center basis-full grow transition-all duration-300 ease-linear`}>
                         <ul className='flex-col lg:flex-row flex lg:items-center ml-auto py-4 lg:py-0' id='header-nav'>
                            
                             <li className=''>
@@ -82,7 +82,7 @@ const Header = () => {
                         </ul>
                         <li className=''>
                            
-                            <Link href="track" className='hidden lg:inline-block text-white bg-gold leading-[46px]  rounded-md font-semibold px-8 border-2 border-transparent ml-4 ps-3 pe-3 transition-all duration-300 ease-in hover:border-gold hover:bg-transparent hover:text-gold'>
+                            <Link href="track" className='inline-block text-white bg-gold leading-[46px]  rounded-md font-semibold px-8 border-2 border-transparent lg:ml-4 ps-3 pe-3 transition-all duration-300 ease-in hover:border-gold hover:bg-transparent hover:text-gold'>
                                 Track your parcel
                             </Link>
                         </li>

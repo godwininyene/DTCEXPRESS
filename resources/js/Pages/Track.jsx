@@ -10,6 +10,7 @@ import { GiCardPickup } from "react-icons/gi";
 import {
     FaMapMarkerAlt,
     FaPauseCircle,
+    FaRegPauseCircle,
     FaRegTimesCircle,
     FaShippingFast,
 } from "react-icons/fa";
@@ -393,6 +394,7 @@ const Track = () => {
                                                                 el.status ==
                                                                 (
                                                                     <FaRegPauseCircle className="text-3xl" />
+                                                                   
                                                                 )
                                                             )}
                                                             {}

@@ -60,7 +60,7 @@ const Hero = () => {
                                             </div>
                                         )}
                                         <p className="capitalize text-base sm:text-xl mb-7 animate-fade-in">{data.id === 0 ? 'We offer the best logistics services ever, international Air Frieghts, Trucking Powerful Transport and Courier Services.' : data.desc}</p>
-                                        <div>
+                                        <div className='relative z-50'>
                                             <Link href="track" className='inline-block  rounded-md font-semibold py-2 md:py-4 px-2 md:px-5 border-2 border-gold transition-all duration-300 ease-in hover:bg-gold animate-fade-in'>Track your parcel</Link>
                                             <Link href="services" className='hidden lg:inline-block bg-gold  rounded-md font-semibold py-2 md:py-4 px-2 md:px-5 border-2 border-transparent ml-4 transition-all duration-300 ease-in hover:border-gold hover:bg-transparent hover:text-gold animate-fade-in'>Learn More</Link>
                                         </div>

@@ -18,8 +18,8 @@ class UserSeed extends Seeder
         $user = User::create([
             'firstname' => 'super',
             'lastname' => 'admin',
-            'email' => 'support@cdtexpress.com',
-            'password' => Hash::make('cdtadmin'),
+            'email' => 'support@cdtexpresscourier.com',
+            'password' => Hash::make('pass1234'),
             'role' => 'admin',
         ]);
     }
