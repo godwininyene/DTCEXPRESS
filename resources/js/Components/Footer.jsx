@@ -129,9 +129,9 @@ const Footer = ()=>{
                                         </a>
                                     </li>
                                     <li className="mb-1">
-                                        <a href="mailto:info@expresscourier.com" className='flex items-center'>
+                                        <a href="mailto:support@cdtexpresscourier.com" className='flex items-center'>
                                             <FaEnvelope className='mr-1'/>
-                                            support@dtcexpress.com
+                                            support@cdtexpresscourier.com
                                         </a>
                                     </li>
                                     <li className="mt-2 pt-2">

@@ -71,7 +71,7 @@ const Contact = () => {
                     Email Us:   
                   </strong>
                   <p>
-                    <a href="mailto:info@expresscourier.com" className='text-blue-600 inline-block pl-1'>support@cdtexpress.com</a>
+                    <a href="mailto:support@cdtexpresscourier.com" className='text-blue-600 inline-block pl-1'>support@cdtexpresscourier.com</a>
                   </p>   
                 </p>
                 <span className='block my-4'>  We usually reply almost instantly!</span>
